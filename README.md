@@ -18,7 +18,7 @@ Our team deployed a simplified approach to validate image classification models:
 Data preprocessing techniques included image cleaning (cropping and blur) and converting data to numeric RGB color values normalized by a value of 255 to a range of 0–1, making it possible to classify images based on numeric values within the dataset. Image regularization was essential for a more uniform analysis of the dataset. String labels were converted to binary labels (malignant and benign). Train and test datasets were merged after labeling and shuffled to reduce bias and facilitate additional analysis and model validation.
 
 Models resolved in 10 to 15 minutes for the initial dataset, requiring additional computational time for expanded datasets on personal devices. Models were saved as Pickle files for future use where weighting could be saved for improved processing speed.
-###Outcome
+### Outcome
 Preprocessing data supported all models to attain 75% accuracy or better on the dataset. This makes sense because the dataset was clean. Benefits bifurcated models as the dataset was expanded.
 CNN outperformed other model alternatives on the dataset and on an expanded dataset affording a model accuracy of 85.8% without overfitting. CNN requires larger datasets for training making it a strong model for expanding datasets.
 ### Takeaways
